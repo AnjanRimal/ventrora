@@ -1,0 +1,211 @@
+.footer {
+  background: var(--text-dark);
+  color: var(--cream);
+}
+
+.footer__newsletter {
+  background: var(--cream);
+  padding: 60px 0;
+  border-top: 1px solid var(--warm-gray);
+}
+
+.footer__newsletter-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer__newsletter-label {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer__newsletter-text h3 {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text-dark);
+}
+
+.footer__newsletter-form {
+  display: flex;
+  gap: 0;
+  flex: 0 0 420px;
+}
+
+.footer__newsletter-form input {
+  flex: 1;
+  padding: 14px 20px;
+  border: 1px solid var(--light-gray);
+  border-right: none;
+  background: var(--white);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: var(--text-dark);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.footer__newsletter-form input:focus {
+  border-color: var(--gold);
+}
+
+.footer__newsletter-form button {
+  padding: 14px 28px;
+  background: var(--text-dark);
+  color: var(--white);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer__newsletter-form button:hover {
+  background: var(--gold);
+}
+
+.footer__newsletter-success {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-style: italic;
+  color: var(--gold-dark);
+}
+
+.footer__main {
+  padding: 80px 0 60px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  color: var(--white);
+}
+
+.footer__logo-sub {
+  font-size: 8px;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.footer__brand-desc {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--mid-gray);
+  margin-bottom: 24px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__socials a {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mid-gray);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.footer__socials a:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.footer__col h4 {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--light-gray);
+  font-weight: 600;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer__col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__col a {
+  font-size: 12px;
+  color: var(--mid-gray);
+  transition: color 0.3s ease;
+  letter-spacing: 0.03em;
+}
+
+.footer__col a:hover {
+  color: var(--gold-light);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 24px 0;
+}
+
+.footer__bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__bottom p {
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.footer__bottom-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__bottom-links a {
+  font-size: 11px;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.footer__bottom-links a:hover {
+  color: var(--gold-light);
+}
+
+@media (max-width: 900px) {
+  .footer__newsletter-inner { flex-direction: column; align-items: flex-start; }
+  .footer__newsletter-form { flex: none; width: 100%; }
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+
+@media (max-width: 600px) {
+  .footer__grid { grid-template-columns: 1fr; }
+  .footer__bottom .container { flex-direction: column; gap: 16px; text-align: center; }
+}
