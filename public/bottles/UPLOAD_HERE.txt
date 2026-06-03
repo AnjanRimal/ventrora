@@ -1,0 +1,9 @@
+Upload your 7 bottle photos here with these exact filenames:
+
+noir.jpg        → Black geometric bottle (Image 6)
+midnight.jpg    → Dark navy V-shape bottle (Image 7)
+obsidian.jpg    → Emerald green bottle (Image 3)
+lumiere.jpg     → Amber/orange bottle (Image 1)
+seraphin.jpg    → Purple/mauve bottle (Image 2)
+bleu.jpg        → Navy blue bottle (Image 4)
+rose.jpg        → Blush pink bottle (Image 5)

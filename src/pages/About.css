@@ -1,0 +1,84 @@
+.about { background:var(--cream); }
+
+/* HERO */
+.about__hero { background:var(--black);padding:100px 48px 80px;text-align:center; }
+.about__hero-text { max-width:600px;margin:0 auto 48px; }
+.about__hero-text p { font-size:15px;color:rgba(255,255,255,0.5);line-height:1.8;margin-top:16px; }
+.about__hero-stats { display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap; }
+.about__hero-stat { text-align:center;display:flex;flex-direction:column;gap:6px; }
+.about__hero-stat span:first-child { font-family:var(--font-serif);font-size:40px;color:#fff;line-height:1; }
+.about__hero-stat span:last-child { font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35); }
+.about__hero-stat-div { width:1px;height:48px;background:rgba(255,255,255,0.1); }
+
+/* FOUNDERS */
+.about__founders { padding:100px 0;background:var(--cream); }
+.about__founders-header { text-align:center;margin-bottom:60px; }
+.about__founders-header p { font-size:14px;color:var(--gray-dark);margin-top:8px; }
+.about__founders-grid { display:grid;grid-template-columns:1fr 1fr;gap:32px; }
+
+.founder-card { background:var(--white);border:1px solid var(--cream-mid); }
+.founder-card__top { display:flex;gap:0;border-bottom:1px solid var(--cream-mid); }
+.founder-card__photo { width:200px;flex-shrink:0;overflow:hidden;position:relative; }
+.founder-card__photo img { width:100%;height:100%;object-fit:cover;object-position:top; }
+.founder-card__initials { width:100%;height:100%;min-height:200px;background:var(--black);display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-size:48px;color:rgba(255,255,255,0.2); }
+.founder-card__bio { padding:28px 24px;display:flex;flex-direction:column;gap:10px; }
+.founder-card__name { font-family:var(--font-serif);font-size:22px;font-weight:400;color:var(--black);margin-bottom:4px; }
+.founder-card__role { font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);font-weight:600;display:block;margin-bottom:12px; }
+.founder-card__text { font-size:13px;line-height:1.85;color:var(--gray-dark); }
+
+.founder-card__quote { padding:24px 28px;background:var(--cream-dark);position:relative; }
+.founder-card__quote-mark { font-family:var(--font-serif);font-size:60px;color:var(--accent);opacity:0.2;position:absolute;top:8px;left:20px;line-height:1; }
+.founder-card__quote-text { font-family:var(--font-serif);font-size:15px;font-style:italic;color:var(--black);line-height:1.7;margin-bottom:12px;padding-left:16px;border-left:2px solid var(--accent); }
+.founder-card__quote-attr { font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);font-weight:600; }
+
+/* PALACE */
+.about__palace { padding:100px 0;background:var(--black); }
+.about__palace-inner { display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center; }
+.about__palace-text p { font-size:14px;line-height:1.9;color:rgba(255,255,255,0.5);margin-bottom:18px; }
+.about__palace-visual { display:flex;align-items:center;justify-content:center; }
+.about__palace-badge { text-align:center;border:1px solid rgba(255,255,255,0.1);padding:52px 60px;display:flex;flex-direction:column;gap:6px; }
+.about__palace-num { font-family:var(--font-serif);font-size:80px;color:#fff;line-height:1; }
+.about__palace-label { font-family:var(--font-serif);font-size:18px;color:rgba(255,255,255,0.4);font-style:italic; }
+.about__palace-sub { font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent); }
+
+/* TIMELINE */
+.about__timeline { padding:100px 0;background:var(--cream-dark); }
+.about__tl { position:relative;max-width:800px;margin:0 auto; }
+.about__tl::before { content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--cream-mid);transform:translateX(-50%); }
+.about__tl-item { display:flex;align-items:flex-start;margin-bottom:48px;position:relative; }
+.about__tl-item.left { flex-direction:row-reverse; }
+.about__tl-content { width:calc(50% - 32px);background:var(--cream);padding:24px 28px;border:1px solid var(--cream-mid); }
+.about__tl-item.left .about__tl-content { margin-right:32px; }
+.about__tl-item.right .about__tl-content { margin-left:32px; }
+.about__tl-dot { width:16px;height:16px;border-radius:50%;background:var(--accent);border:3px solid var(--cream-dark);position:absolute;left:50%;top:24px;transform:translateX(-50%);z-index:1; }
+.about__tl-year { font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);font-weight:600;display:block;margin-bottom:6px; }
+.about__tl-title { font-family:var(--font-serif);font-size:18px;color:var(--black);margin-bottom:8px; }
+.about__tl-desc { font-size:12px;line-height:1.8;color:var(--gray-dark); }
+
+/* PHILOSOPHY */
+.about__philosophy { padding:80px 0;background:var(--cream); }
+.about__phil-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--cream-mid); }
+.about__phil-item { padding:40px 36px;border-right:1px solid var(--cream-mid);text-align:center; }
+.about__phil-item:last-child { border-right:none; }
+.about__phil-icon { display:block;font-size:28px;color:var(--accent);margin-bottom:16px; }
+.about__phil-title { font-family:var(--font-serif);font-size:20px;font-weight:400;color:var(--black);margin-bottom:10px; }
+.about__phil-desc { font-size:13px;line-height:1.8;color:var(--gray-dark); }
+
+/* CTA */
+.about__cta { padding:100px 0;background:var(--cream-dark);border-top:1px solid var(--cream-mid); }
+.about__cta-inner { text-align:center;max-width:560px;margin:0 auto; }
+.about__cta-inner p { font-size:14px;color:var(--gray-dark);line-height:1.8;margin-bottom:32px; }
+
+@media(max-width:900px) {
+  .about__hero { padding:60px 20px; }
+  .about__founders-grid { grid-template-columns:1fr; }
+  .founder-card__photo { width:140px; }
+  .about__palace-inner { grid-template-columns:1fr; }
+  .about__palace-visual { display:none; }
+  .about__tl::before { left:16px; }
+  .about__tl-item,.about__tl-item.left { flex-direction:column; }
+  .about__tl-content,.about__tl-item.left .about__tl-content,.about__tl-item.right .about__tl-content { width:100%;margin:0 0 0 40px; }
+  .about__tl-dot { left:16px;top:24px; }
+  .about__phil-grid { grid-template-columns:1fr; }
+  .about__phil-item { border-right:none;border-bottom:1px solid var(--cream-mid); }
+}

@@ -1,0 +1,4 @@
+Upload founder photos here with these exact filenames:
+
+dinesh.jpg  → Dinesh Bhandari photo (Image 1 you uploaded)
+manoj.jpg   → Manoj Adhikari photo (Image 2 you uploaded)
