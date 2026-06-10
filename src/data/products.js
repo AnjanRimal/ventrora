@@ -1,0 +1,208 @@
+// Ventrora — 7 signature fragrances
+// Images stored in /public/bottles/
+// Upload your real bottle photos to /public/bottles/ with these filenames
+
+export const products = [
+  {
+    id: 'noir',
+    name: 'Ventrora Noir',
+    shortName: 'Noir',
+    subtitle: 'Eau de Parfum',
+    tagline: 'Dark. Powerful. Unforgettable.',
+    description: 'An opulent oriental fragrance that commands attention. Ventrora Noir opens with a burst of Bergamot and Black Pepper before settling into a rich heart of Oud and Rose, leaving a trail of Amber and Musk that lingers for hours.',
+    color: '#0a0604',
+    image: '/bottles/noir.jpg',
+    badge: 'Bestseller',
+    gender: 'men',
+    mood: 'oud',
+    sizes: ['50ml', '100ml', '200ml'],
+    prices: { '50ml': 145, '100ml': 185, '200ml': 265 },
+    notes: {
+      top: ['Bergamot', 'Black Pepper', 'Cardamom'],
+      heart: ['Oud', 'Rose', 'Patchouli'],
+      base: ['Amber', 'Musk', 'Vetiver']
+    },
+    longevity: '12-14 hrs',
+    sillage: 'Expansive',
+    concentration: 'EDP',
+    rating: 4.9,
+    reviews: 247,
+  },
+  {
+    id: 'midnight',
+    name: 'Ventrora Midnight',
+    shortName: 'Midnight',
+    subtitle: 'Eau de Parfum',
+    tagline: 'Deep. Mysterious. Magnetic.',
+    description: 'Inspired by the electric energy of a city after dark. A deep navy soul with notes of Smoky Tobacco, Dark Iris and Sandalwood that create an aura of effortless sophistication.',
+    color: '#0a1628',
+    image: '/bottles/midnight.jpg',
+    badge: 'New',
+    gender: 'men',
+    mood: 'woody',
+    sizes: ['50ml', '100ml'],
+    prices: { '50ml': 135, '100ml': 175 },
+    notes: {
+      top: ['Bergamot', 'Tobacco Leaf', 'Violet'],
+      heart: ['Dark Iris', 'Sandalwood', 'Leather'],
+      base: ['Vetiver', 'Amber', 'Musk']
+    },
+    longevity: '10-12 hrs',
+    sillage: 'Strong',
+    concentration: 'EDP',
+    rating: 4.7,
+    reviews: 183,
+  },
+  {
+    id: 'obsidian',
+    name: 'Ventrora Obsidian',
+    shortName: 'Obsidian',
+    subtitle: 'Eau de Parfum',
+    tagline: 'Rare. Bold. Elemental.',
+    description: 'Born from the earth itself. An emerald green forest accord with notes of Vetiver, Cedarwood and Green Cardamom. Grounding, complex and impossible to ignore.',
+    color: '#0d2818',
+    image: '/bottles/obsidian.jpg',
+    badge: null,
+    gender: 'unisex',
+    mood: 'woody',
+    sizes: ['50ml', '100ml', '200ml'],
+    prices: { '50ml': 125, '100ml': 165, '200ml': 235 },
+    notes: {
+      top: ['Green Cardamom', 'Bergamot', 'Galbanum'],
+      heart: ['Cedarwood', 'Vetiver', 'Geranium'],
+      base: ['Oakmoss', 'Musk', 'Benzoin']
+    },
+    longevity: '10-12 hrs',
+    sillage: 'Moderate',
+    concentration: 'EDP',
+    rating: 4.6,
+    reviews: 156,
+  },
+  {
+    id: 'lumiere',
+    name: 'Ventrora Lumière',
+    shortName: 'Lumière',
+    subtitle: 'Eau de Parfum',
+    tagline: 'Warm. Spicy. Radiant.',
+    description: 'A warm oriental with the glow of a golden sunset. Saffron and Cinnamon open this rich amber fragrance before giving way to a heart of Jasmine and Oud, grounded in Vanilla and Sandalwood.',
+    color: '#5c1a00',
+    image: '/bottles/lumiere.jpg',
+    badge: null,
+    gender: 'women',
+    mood: 'oriental',
+    sizes: ['50ml', '100ml'],
+    prices: { '50ml': 130, '100ml': 165 },
+    notes: {
+      top: ['Saffron', 'Cinnamon', 'Bergamot'],
+      heart: ['Jasmine', 'Oud', 'Rose'],
+      base: ['Vanilla', 'Sandalwood', 'Amber']
+    },
+    longevity: '10-12 hrs',
+    sillage: 'Strong',
+    concentration: 'EDP',
+    rating: 4.8,
+    reviews: 201,
+  },
+  {
+    id: 'seraphin',
+    name: 'Ventrora Séraphine',
+    shortName: 'Séraphine',
+    subtitle: 'Eau de Parfum',
+    tagline: 'Feminine. Elegant. Timeless.',
+    description: 'A floral oriental of rare elegance. Violet and Peony open on a heart of Bulgarian Rose and White Musk, settling into a soft base of Cashmeran and Sandalwood. Femininity at its most refined.',
+    color: '#3d1030',
+    image: '/bottles/seraphin.jpg',
+    badge: null,
+    gender: 'women',
+    mood: 'floral',
+    sizes: ['30ml', '50ml', '100ml'],
+    prices: { '30ml': 95, '50ml': 140, '100ml': 180 },
+    notes: {
+      top: ['Violet', 'Peony', 'Pink Pepper'],
+      heart: ['Bulgarian Rose', 'White Musk', 'Iris'],
+      base: ['Cashmeran', 'Sandalwood', 'Vanilla']
+    },
+    longevity: '8-10 hrs',
+    sillage: 'Moderate',
+    concentration: 'EDP',
+    rating: 4.7,
+    reviews: 178,
+  },
+  {
+    id: 'bleu',
+    name: 'Ventrora Bleu',
+    shortName: 'Bleu',
+    subtitle: 'Eau de Parfum',
+    tagline: 'Fresh. Sophisticated. Iconic.',
+    description: 'A masterclass in masculine freshness. Citrus opens brilliantly before a heart of Grapefruit and Cedar leads to a clean mineral base. The fragrance of effortless confidence.',
+    color: '#0a1440',
+    image: '/bottles/bleu.jpg',
+    badge: 'Staff Pick',
+    gender: 'men',
+    mood: 'fresh',
+    sizes: ['50ml', '100ml', '200ml'],
+    prices: { '50ml': 120, '100ml': 155, '200ml': 220 },
+    notes: {
+      top: ['Bergamot', 'Lemon', 'Pink Pepper'],
+      heart: ['Grapefruit', 'Cedarwood', 'Vetiver'],
+      base: ['Labdanum', 'Musk', 'Amberwood']
+    },
+    longevity: '8-10 hrs',
+    sillage: 'Moderate',
+    concentration: 'EDP',
+    rating: 4.5,
+    reviews: 134,
+  },
+  {
+    id: 'rose',
+    name: 'Ventrora Rose',
+    shortName: 'Rose',
+    subtitle: 'Eau de Parfum',
+    tagline: 'Delicate. Romantic. Pure.',
+    description: 'The most romantic fragrance in the Ventrora collection. A luminous blush rose accord with Lychee and Peach top notes that blossom into a heart of Rose Absolute and Magnolia.',
+    color: '#3d1520',
+    image: '/bottles/rose.jpg',
+    badge: null,
+    gender: 'women',
+    mood: 'floral',
+    sizes: ['30ml', '50ml', '100ml'],
+    prices: { '30ml': 90, '50ml': 130, '100ml': 165 },
+    notes: {
+      top: ['Lychee', 'Peach', 'Bergamot'],
+      heart: ['Rose Absolute', 'Magnolia', 'Peony'],
+      base: ['White Musk', 'Cedarwood', 'Vanilla']
+    },
+    longevity: '8-10 hrs',
+    sillage: 'Light',
+    concentration: 'EDP',
+    rating: 4.6,
+    reviews: 167,
+  },
+]
+
+export const getProduct = (id) => products.find(p => p.id === id)
+
+export const filterProducts = (filter) => {
+  if (filter === 'all') return products
+  if (['men', 'women', 'unisex'].includes(filter)) return products.filter(p => p.gender === filter)
+  return products.filter(p => p.mood === filter)
+}
+
+export const founders = [
+  {
+    id: 'dinesh',
+    name: 'Dinesh Bhandari',
+    role: 'Co-Founder & CEO',
+    image: '/founders/dinesh.jpg',
+    quote: 'We spent years curating the world\'s finest fragrances for our customers. Ventrora is us finally creating one for ourselves.',
+    bio: 'A visionary entrepreneur with over 7 years in luxury fragrance retail. Dinesh leads brand identity, creative direction and business strategy for Ventrora.',
+  },
+  {
+    id: 'manoj',
+    name: 'Manoj Adhikari',
+    role: 'Co-Founder & COO',
+    image: '/founders/manoj.jpg',
+    quote: 'We know what customers want because we\'ve listened to them for seven years across thirty stores. That knowledge is in every bottle of Ventrora.',
+    bio: 'The operational genius behind one of the most recognized fragrance retail networks in the United States. Manoj brings deep expertise to every aspect of Ventrora — from product development and sourcing to packaging and customer experience.',
+  },
+]

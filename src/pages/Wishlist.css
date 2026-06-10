@@ -1,0 +1,24 @@
+.wishlist { background:var(--cream);min-height:100vh;padding-bottom:80px; }
+.wishlist__hero { text-align:center;padding:72px 20px 40px;border-bottom:1px solid var(--cream-mid); }
+.wishlist__hero p { font-size:13px;color:var(--gray-mid);margin-top:8px; }
+.wishlist__empty { text-align:center;padding:100px 20px;display:flex;flex-direction:column;align-items:center;gap:16px; }
+.wishlist__empty-icon { font-size:48px;color:var(--cream-mid); }
+.wishlist__empty h2 { font-family:var(--font-serif);font-size:28px;font-weight:400;color:var(--black); }
+.wishlist__empty p { font-size:14px;color:var(--gray-dark);margin-bottom:8px; }
+.wishlist__grid { display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:48px 0; }
+.wish-card { background:var(--white);border:1px solid var(--cream-mid);overflow:hidden;transition:box-shadow 0.3s; }
+.wish-card:hover { box-shadow:0 8px 32px rgba(0,0,0,0.08); }
+.wish-card__img { display:flex;aspect-ratio:3/4;align-items:center;justify-content:center;position:relative;overflow:hidden;text-decoration:none; }
+.wish-card__img img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.5s; }
+.wish-card:hover .wish-card__img img { transform:scale(1.04); }
+.wish-card__v { font-family:var(--font-serif);font-size:32px;color:rgba(255,255,255,0.15);position:relative;z-index:1; }
+.wish-card__info { padding:16px; }
+.wish-card__name { font-family:var(--font-serif);font-size:16px;color:var(--black);text-decoration:none;display:block;margin-bottom:3px; }
+.wish-card__name:hover { color:var(--accent); }
+.wish-card__sub { font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);display:block;margin-bottom:6px; }
+.wish-card__price { font-size:14px;color:var(--black);font-weight:500;display:block;margin-bottom:14px; }
+.wish-card__actions { display:flex;gap:8px; }
+.wish-card__remove { width:40px;height:40px;border:1px solid var(--cream-mid);background:transparent;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--gray-mid);cursor:pointer;transition:all 0.3s;flex-shrink:0; }
+.wish-card__remove:hover { border-color:var(--accent);color:var(--accent); }
+@media(max-width:900px) { .wishlist__grid { grid-template-columns:repeat(2,1fr); } }
+@media(max-width:560px) { .wishlist__grid { grid-template-columns:1fr; } }

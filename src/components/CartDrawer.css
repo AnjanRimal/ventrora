@@ -1,0 +1,47 @@
+.cart-overlay { position:fixed;inset:0;background:rgba(26,24,20,0.5);z-index:1100;opacity:0;pointer-events:none;transition:opacity 0.4s ease;backdrop-filter:blur(2px); }
+.cart-overlay.open { opacity:1;pointer-events:all; }
+.cart { position:fixed;top:0;right:0;width:400px;max-width:100vw;height:100vh;background:var(--white);z-index:1200;display:flex;flex-direction:column;transform:translateX(100%);transition:transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94);border-left:1px solid var(--cream-mid); }
+.cart--open { transform:translateX(0); }
+
+/* Dark header */
+.cart__head { background:var(--black);padding:24px 24px 20px;display:flex;align-items:center;justify-content:space-between; }
+.cart__title { font-family:var(--font-serif);font-size:20px;font-weight:400;color:var(--white); }
+.cart__count { font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em;display:block;margin-top:2px; }
+.cart__close { color:rgba(255,255,255,0.4);font-size:16px;cursor:pointer;background:none;border:none;transition:color 0.2s;width:32px;height:32px;display:flex;align-items:center;justify-content:center; }
+.cart__close:hover { color:var(--white); }
+
+/* Items */
+.cart__items { flex:1;overflow-y:auto;padding:0 24px; }
+.cart__empty { display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:16px;text-align:center; }
+.cart__empty-icon { font-size:40px;color:var(--cream-mid); }
+.cart__empty p { font-family:var(--font-serif);font-size:18px;color:var(--gray-mid); }
+
+.cart__item { display:flex;gap:12px;padding:18px 0;border-bottom:1px solid var(--cream-dark); }
+.cart__item-img { width:64px;height:80px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:2px;overflow:hidden; }
+.cart__item-img img { width:100%;height:100%;object-fit:cover; }
+.cart__item-v { font-family:var(--font-serif);font-size:20px;color:rgba(255,255,255,0.25); }
+.cart__item-info { flex:1;display:flex;flex-direction:column;justify-content:space-between; }
+.cart__item-top { display:flex;justify-content:space-between;align-items:flex-start; }
+.cart__item-name { font-family:var(--font-serif);font-size:14px;color:var(--black);margin-bottom:3px; }
+.cart__item-size { font-size:10px;color:var(--gray-mid); }
+.cart__item-remove { color:var(--gray-light);font-size:11px;cursor:pointer;background:none;border:none;padding:2px;transition:color 0.2s; }
+.cart__item-remove:hover { color:var(--black); }
+.cart__item-bot { display:flex;align-items:center;justify-content:space-between; }
+
+.cart__qty { display:flex;align-items:center;border:1px solid var(--cream-mid); }
+.cart__qty-btn { width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--gray-dark);cursor:pointer;background:none;border:none;transition:all 0.2s; }
+.cart__qty-btn:hover { background:var(--cream-dark);color:var(--black); }
+.cart__qty-num { width:32px;text-align:center;font-size:12px;font-weight:500;color:var(--black);border-left:1px solid var(--cream-mid);border-right:1px solid var(--cream-mid);line-height:28px; }
+.cart__item-price { font-size:14px;font-weight:500;color:var(--black); }
+
+/* Footer */
+.cart__foot { padding:18px 24px 24px;border-top:1px solid var(--cream-mid); }
+.cart__total { display:flex;justify-content:space-between;align-items:center;margin-bottom:8px; }
+.cart__total-label { font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-mid); }
+.cart__total-amt { font-family:var(--font-serif);font-size:24px;color:var(--black); }
+.cart__free-ship { font-size:11px;color:#3B6D11;margin-bottom:14px;letter-spacing:0.05em; }
+.cart__ship-msg { font-size:11px;color:var(--gray-mid);margin-bottom:14px;letter-spacing:0.05em; }
+.cart__continue { display:block;width:100%;text-align:center;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-mid);text-decoration:underline;cursor:pointer;background:none;border:none;font-family:var(--font-sans);transition:color 0.2s; }
+.cart__continue:hover { color:var(--black); }
+
+@media(max-width:480px) { .cart { width:100vw; } }
