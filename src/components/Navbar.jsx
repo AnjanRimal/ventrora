@@ -42,6 +42,7 @@ export default function Navbar() {
 
           <nav className="navbar__left">
             <Link to="/collections" className={`navbar__link ${isActive('/collections') ? 'active' : ''}`}>Collections</Link>
+            <Link to="/scent-finder" className={`navbar__link ${isActive('/scent-finder') ? 'active' : ''}`}>Scent Finder</Link>
             <Link to="/about" className={`navbar__link ${isActive('/about') ? 'active' : ''}`}>Our Story</Link>
             <Link to="/contact" className={`navbar__link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
           </nav>
@@ -83,6 +84,7 @@ export default function Navbar() {
         <nav className="mobile-menu__nav">
           {[
             { label: 'Collections', path: '/collections' },
+            { label: 'Scent Finder', path: '/scent-finder' },
             { label: 'Our Story', path: '/about' },
             { label: 'Contact', path: '/contact' },
             { label: 'Wishlist', path: '/wishlist' },

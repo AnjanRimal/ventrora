@@ -16,6 +16,7 @@ import Account from './pages/Account'
 import Checkout from './pages/Checkout'
 import OrderSuccess from './pages/OrderSuccess'
 import Contact from './pages/Contact'
+import ScentFinder from './pages/ScentFinder'
 
 function ScrollTop() {
   const { pathname } = useLocation()
@@ -42,6 +43,8 @@ export default function App() {
             <Route path="/account" element={<Account />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/order-success" element={<OrderSuccess />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/scent-finder" element={<ScentFinder />} />
           </Routes>
         </main>
         <Footer />
